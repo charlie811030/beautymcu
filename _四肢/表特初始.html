@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>表特銘傳 Beauty Mcu</title>
+    <meta charset="utf-8" />
+    <style>
+        :first-child {
+            color: red;
+        }
+
+        .r {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="r">
+        表特銘傳圖鑑
+    </h1>
+    <button onclick="
+            var p=document.getElementById('text');
+            p.innerHTML='<b>歡迎光臨</b>' ;
+            ">
+        點我
+    </button>
+    <p id="text"></p>
+    <p>...</p>
+
+    <a id="imgshref" href="https://www.facebook.com/beautyinmcu/" target="_blank">
+        <img src="brautymcuimg/公事系/2016-6公事系.jpg" width="200" id="imgs" height="200" />
+    </a>
+
+    <p>...</p>
+    
+    <script type="text/javascript">
+
+var iImage = -1;
+
+setImage();
+
+function setImage()
+{
+	var img = new Array();
+	var url = new Array();
+	img[0] = "brautymcuimg/公事系/2016-6公事系.jpg"; url[0] = "https://www.facebook.com/beautyinmcu/";
+	img[1] = "brautymcuimg/公事系/2016-5公事系.jpg"; url[1] = "https://www.facebook.com/beautyinmcu/";
+	img[2] = "brautymcuimg/生科系/2014-661生科系.jpg"; url[2] = "https://www.facebook.com/beautyinmcu/";
+	img[3] = "brautymcuimg/生科系/2014-677生科系.jpg"; url[3] = "https://www.facebook.com/beautyinmcu/";
+
+	iImage += 1;
+	if (iImage >= img.length)
+		iImage = 0;
+	document.getElementById("imgs").src = img[iImage];
+	document.getElementById("imgshref").href = url[iImage];
+
+	setTimeout('setImage()', 1000);
+}
+
+    </script>
+    <p><h2>公事系</h2></p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/6gVX_McQuiw" frameborder="0" allowfullscreen></iframe>
+    <img src="brautymcuimg/公事系/2016-6公事系.jpg" width="200" height="200" />
+    <img src="brautymcuimg/公事系/2016-5公事系.jpg" width="200" height="200" />
+    <hr />
+    <p><h2>生科系</h2></p>
+    <img src="brautymcuimg/生科系/2014-661生科系.jpg" width="200" height="200" />
+    <img src="brautymcuimg/生科系/2014-677生科系.jpg" width="200" height="200" />
+
+
+</body>
+</html>

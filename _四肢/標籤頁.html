@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Tabs - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+    </script>
+</head>
+<body>
+    <div id="my_tabs">
+        <ul>
+            <li><a href="#t1"><span>校區地圖</span></a></li>
+            <li><a href="#t2"><span>公事系</span></a></li>
+            <li><a href="#t3"><span>企管系</span></a></li>
+
+        </ul>
+        <div id="t1">
+            <h3>
+                
+            </h3>
+        </div>
+        <div id="t2">
+            <h3>公事系</h3>
+        </div>
+        <div id="t3">
+            <h3>生科系
+          </h3>
+        </div>
+    </div>
+    <script>
+        $('#my_tabs').tabs();
+    </script>
+</body>
+</html>
